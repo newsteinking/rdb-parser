@@ -1,0 +1,41 @@
+{
+  "name": "rdb-parser",
+  "version": "0.1.5",
+  "keywords": ["redis", "rdb", "db", "parser", "streaming"],
+  "homepage": "https://github.com/newsteinking/rdb-parser.git",
+  "description": "async streaming parser for redis RDB dumps",
+  "main": "rdb-parser.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newsteinking/rdb-parser.git"
+  },
+  "engines": {
+    "node": "^4.0.0"
+  },
+  "author": "newstein newstein33@gmail.com ",
+  "dependencies": {"node-int64": "0.3.0", "node-lzf": "0.3.0", "bufferjs": "1.1.0"},
+  "devDependencies": {"jslint": "0.9.3"},
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "bugs" : { "url" : "https://github.com/newsteinking/rdb-parser/issues" },
+  "contributors": [
+    {
+      "name": "newstein",
+      "email": "newstein33@gmail.com",
+      "web": "https://github.com/newsteinking/rdb-parser"
+    },
+    {
+      "name": "Carlos Guerreiro",
+      "email": "cguerreiro@igalia.com",
+      "web": "http://igalia.com"
+    }
+  ],
+  "scripts": {
+    "lint": "./node_modules/jslint/bin/jslint.js *.js",
+    "test": "node ./tests/parseFile.js"
+  }
+}
