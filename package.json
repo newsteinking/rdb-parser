@@ -13,7 +13,10 @@
     "node": "^4.0.0"
   },
   "author": "newstein newstein33@gmail.com ",
-  "dependencies": {"node-int64": "0.3.0", "node-lzf": "0.3.0", "bufferjs": "1.1.0"},
+  "dependencies": {
+      "node-int64": "0.3.0", 
+      "node-lzf": "https://github.com/newsteinking/node-lzf.git", 
+      "bufferjs": "1.1.0"},
   "devDependencies": {"jslint": "0.9.3"},
   "licenses": [
     {
